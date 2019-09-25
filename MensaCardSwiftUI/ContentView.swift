@@ -9,8 +9,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var mensaCardData = MensaCardData()
+    
     var body: some View {
-        Text("Hello World")
+        VStack {
+            Text("Card Credits: \(String(format: "%.2f", self.mensaCardData.credits))")
+            .onAppear {
+                self.mensaCardData.scanCard()
+            }
+            Button(action: {
+                self.mensaCardData.scanCard()
+            }) {
+                Text("Scan Again")
+            }
+        }
     }
 }
 

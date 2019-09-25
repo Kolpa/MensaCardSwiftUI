@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43A2672B233ACDD10097BD35 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 43A2672A233ACDD10097BD35 /* Podfile */; };
 		43DEF651233A962400827CA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DEF650233A962400827CA6 /* AppDelegate.swift */; };
 		43DEF653233A962400827CA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DEF652233A962400827CA6 /* SceneDelegate.swift */; };
 		43DEF655233A962400827CA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DEF654233A962400827CA6 /* ContentView.swift */; };
 		43DEF657233A962500827CA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43DEF656233A962500827CA6 /* Assets.xcassets */; };
 		43DEF65A233A962500827CA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43DEF659233A962500827CA6 /* Preview Assets.xcassets */; };
 		43DEF65D233A962500827CA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43DEF65B233A962500827CA6 /* LaunchScreen.storyboard */; };
+		43DEF665233AB1EE00827CA6 /* MensaCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DEF664233AB1EE00827CA6 /* MensaCardData.swift */; };
+		43DEF667233ACBDD00827CA6 /* NFCMiFareTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DEF666233ACBDD00827CA6 /* NFCMiFareTag.swift */; };
+		455C01D0014A35F7C3A9FE79 /* Pods_MensaCardSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A61E1ED0B150D5684DE73B0 /* Pods_MensaCardSwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02572FDC06856815C043F48B /* Pods-MensaCardSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MensaCardSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-MensaCardSwiftUI/Pods-MensaCardSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		2A61E1ED0B150D5684DE73B0 /* Pods_MensaCardSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MensaCardSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		435AC959233AD56600F0693F /* MensaCardSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MensaCardSwiftUI.entitlements; sourceTree = "<group>"; };
+		43A2672A233ACDD10097BD35 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		43DEF64D233A962400827CA6 /* MensaCardSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MensaCardSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43DEF650233A962400827CA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43DEF652233A962400827CA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,9 @@
 		43DEF659233A962500827CA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43DEF65C233A962500827CA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43DEF65E233A962500827CA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43DEF664233AB1EE00827CA6 /* MensaCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensaCardData.swift; sourceTree = "<group>"; };
+		43DEF666233ACBDD00827CA6 /* NFCMiFareTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCMiFareTag.swift; sourceTree = "<group>"; };
+		55FBD9BF0687AA39A56066F9 /* Pods-MensaCardSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MensaCardSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-MensaCardSwiftUI/Pods-MensaCardSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +42,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455C01D0014A35F7C3A9FE79 /* Pods_MensaCardSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08571AC0941F18B398D82268 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A61E1ED0B150D5684DE73B0 /* Pods_MensaCardSwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		43DEF644233A962400827CA6 = {
 			isa = PBXGroup;
 			children = (
+				43A2672A233ACDD10097BD35 /* Podfile */,
 				43DEF64F233A962400827CA6 /* MensaCardSwiftUI */,
 				43DEF64E233A962400827CA6 /* Products */,
+				F7D76FE4C5E974FFF8FC8F3F /* Pods */,
+				08571AC0941F18B398D82268 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +79,9 @@
 		43DEF64F233A962400827CA6 /* MensaCardSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				435AC959233AD56600F0693F /* MensaCardSwiftUI.entitlements */,
+				43DEF666233ACBDD00827CA6 /* NFCMiFareTag.swift */,
+				43DEF664233AB1EE00827CA6 /* MensaCardData.swift */,
 				43DEF650233A962400827CA6 /* AppDelegate.swift */,
 				43DEF652233A962400827CA6 /* SceneDelegate.swift */,
 				43DEF654233A962400827CA6 /* ContentView.swift */,
@@ -75,6 +101,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F7D76FE4C5E974FFF8FC8F3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02572FDC06856815C043F48B /* Pods-MensaCardSwiftUI.debug.xcconfig */,
+				55FBD9BF0687AA39A56066F9 /* Pods-MensaCardSwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43DEF661233A962500827CA6 /* Build configuration list for PBXNativeTarget "MensaCardSwiftUI" */;
 			buildPhases = (
+				9B6D50919DA2ADF14D11D2FE /* [CP] Check Pods Manifest.lock */,
 				43DEF649233A962400827CA6 /* Sources */,
 				43DEF64A233A962400827CA6 /* Frameworks */,
 				43DEF64B233A962400827CA6 /* Resources */,
+				093AC79A94194834A01AFDC6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,11 +172,54 @@
 			files = (
 				43DEF65D233A962500827CA6 /* LaunchScreen.storyboard in Resources */,
 				43DEF65A233A962500827CA6 /* Preview Assets.xcassets in Resources */,
+				43A2672B233ACDD10097BD35 /* Podfile in Resources */,
 				43DEF657233A962500827CA6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		093AC79A94194834A01AFDC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MensaCardSwiftUI/Pods-MensaCardSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MensaCardSwiftUI/Pods-MensaCardSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MensaCardSwiftUI/Pods-MensaCardSwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B6D50919DA2ADF14D11D2FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MensaCardSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		43DEF649233A962400827CA6 /* Sources */ = {
@@ -147,7 +227,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				43DEF651233A962400827CA6 /* AppDelegate.swift in Sources */,
+				43DEF667233ACBDD00827CA6 /* NFCMiFareTag.swift in Sources */,
 				43DEF653233A962400827CA6 /* SceneDelegate.swift in Sources */,
+				43DEF665233AB1EE00827CA6 /* MensaCardData.swift in Sources */,
 				43DEF655233A962400827CA6 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,8 +364,10 @@
 		};
 		43DEF662233A962500827CA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02572FDC06856815C043F48B /* Pods-MensaCardSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MensaCardSwiftUI/MensaCardSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MensaCardSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 2XMNB3L8C3;
@@ -302,8 +386,10 @@
 		};
 		43DEF663233A962500827CA6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55FBD9BF0687AA39A56066F9 /* Pods-MensaCardSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MensaCardSwiftUI/MensaCardSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MensaCardSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 2XMNB3L8C3;
