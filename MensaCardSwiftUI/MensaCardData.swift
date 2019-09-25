@@ -13,7 +13,7 @@ import PromiseKit
 
 final class MensaCardData: NSObject, ObservableObject, NFCTagReaderSessionDelegate {
     let objectWillChange = ObservableObjectPublisher()
-    
+    var feedbackGenerator = UINotificationFeedbackGenerator()
     var credits : Double = 0.0 {
         willSet {
             self.objectWillChange.send()
@@ -60,6 +60,7 @@ final class MensaCardData: NSObject, ObservableObject, NFCTagReaderSessionDelega
                 }.done { credits in
                     let totalCredits = UInt32(littleEndian: credits.withUnsafeBytes { $0.load(as: UInt32.self) })
                     self.credits = Double(totalCredits) / 1000
+                    self.feedbackGenerator.notificationOccurred(UINotificationFeedbackGenerator.FeedbackType.success)
                     session.invalidate()
                 }.catch { _ in
                     session.invalidate(errorMessage: "Not a valid MensaTag")
